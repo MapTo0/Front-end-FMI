@@ -1,0 +1,117 @@
+body {
+	background-color: #f0ab00;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.sap-gradient {
+	background: rgba(7, 34, 60, 1);
+	background: -moz-linear-gradient(left, rgba(7, 34, 60, 1) 0%, rgba(14, 63, 119, 1) 51%, rgba(14, 63, 119, 1) 84%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(7, 34, 60, 1)), color-stop(51%, rgba(14, 63, 119, 1)), color-stop(84%, rgba(14, 63, 119, 1)));
+	background: -webkit-linear-gradient(left, rgba(7, 34, 60, 1) 0%, rgba(14, 63, 119, 1) 51%, rgba(14, 63, 119, 1) 84%);
+	background: -o-linear-gradient(left, rgba(7, 34, 60, 1) 0%, rgba(14, 63, 119, 1) 51%, rgba(14, 63, 119, 1) 84%);
+	background: -ms-linear-gradient(left, rgba(7, 34, 60, 1) 0%, rgba(14, 63, 119, 1) 51%, rgba(14, 63, 119, 1) 84%);
+	background: linear-gradient(to right, rgba(7, 34, 60, 1) 0%, rgba(14, 63, 119, 1) 51%, rgba(14, 63, 119, 1) 84%);
+	border: none;
+	border-radius: .5rem;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+.main-heading {
+	overflow: hidden;
+	padding-top: .625rem;
+}
+
+.logo {
+	float: left;
+}
+
+.main-heading h1 {
+	float: right;
+	margin: 0;
+	height: 2.375rem;
+	line-height: 1;
+}
+
+.navigation {
+	border-radius: .5rem;
+	padding: 0;
+}
+
+.navigation li {
+	display: inline-block;
+	padding: .5rem;
+}
+
+.navigation a {
+	border-radius: .5rem;
+	color: #fff;
+	display: block;
+	padding: .5rem 1rem;
+	text-decoration: none;
+}
+
+.navigation a:hover {
+	background-color: #f0ab00;
+}
+
+.blog {
+	float: left;
+	max-width: 70%;
+}
+
+.aside {
+	float: right;
+	max-width: 28.5%;
+}
+
+.article,
+.aside-section {
+	background: url('../img/bg_region.jpg');
+	border-radius: .9rem;
+	margin-bottom: 1rem;
+	overflow: hidden;
+	padding: 1rem;
+}
+
+.article h2,
+.aside-section h3 {
+	margin: 0;
+}
+
+.article-time {
+	color: #32107d;
+	font-size: .7rem;
+	font-style: italic;
+}
+
+.main-footer {
+	clear: both;
+}
+
+.main-footer p {
+	color: #fff;
+	padding: 1rem 0;
+	text-align: center;
+}
+
+@media screen and (max-width: 75em) {
+	.wrapper {
+		padding: 0 1rem;
+	}
+}
+
+@media screen and (max-width: 44em) {
+	.navigation li {
+		display: block;
+	}
+
+	.blog,
+	.aside {
+		float: none;
+		max-width: 100%;
+	}
+}
