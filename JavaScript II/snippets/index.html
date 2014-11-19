@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JSON</title>
+</head>
+
+<style>
+#hello {
+    color: red;
+}
+</style>
+
+<script>
+function reqListener() {
+    console.log(this.responseText);
+}
+
+var oReq = new XMLHttpRequest();
+oReq.onload = reqListener;
+oReq.open("GET", "news.json", true);
+oReq.send();
+</script>
+
+<body>
+    <div>
+        <h1 id='hello'>Hello world</h1>
+    </div>
+
+    <div id='test'>Test</div>
+</body>
+
+</html>

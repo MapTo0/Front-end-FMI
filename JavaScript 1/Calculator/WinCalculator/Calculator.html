@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img src="images/icon.png" id="icon">
+            <h1>Calculator</h1>
+            <div id="close">x</div>
+            <div id="maximize">
+                <img src="images/max.png">
+            </div>
+            <div id="minimize">_</div>
+        </header>
+        <div id="calc-body">
+            <header id="calc-header">
+                <ul id="menu">
+                    <li><u>V</u>iew</li>
+                    <li><u>E</u>dit</li>
+                    <li><u>H</u>elp</li>
+                </ul>
+            </header>
+            <div id="input">
+                <input type="text" id="field" placeHolder="0">
+            </div>
+           
+            <div id="main">
+                <table id="keys" cellpadding="2">
+                    <tr>
+                        <td>
+                            <button class="dark-functions special">MC</button>
+                        </td>
+                        <td>
+                            <button class="dark-functions special">MR</button>
+                        </td>
+                        <td>
+                            <button class="dark-functions special">MS</button>
+                        </td>
+                        <td>
+                            <button class="dark-functions special">M+</button>
+                        </td>
+                        <td>
+                            <button class="dark-functions special">M-</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="functions onHover">&#8592;</button>
+                        </td>
+                        <td>
+                            <button class="functions onHover">CE</button>
+                        </td>
+                        <td>
+                            <button class="functions onHover">C</button>
+                        </td>
+                        <td>
+                            <button class="functions onHover">&plusmn;</button>
+                        </td>
+                        <td>
+                            <button class="letters" disabled="disabled">&radic;</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="nums onHover">7</button>
+                        </td>
+                        <td>
+                            <button class="nums onHover">8</button>
+                        </td>
+                        <td>
+                            <button class="nums onHover">9</button>
+                        </td>
+                        <td>
+                            <button class="functions onHover signs">/</button>
+                        </td>
+                        <td>
+                            <button class="letters" disabled="disabled">%</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="nums onHover">4</button>
+                        </td>
+                        <td>
+                            <button class="nums onHover">5</button>
+                        </td>
+                        <td>
+                            <button class="nums onHover">6</button>
+                        </td>
+                        <td>
+                            <button class="functions onHover signs">*</button>
+                        </td>
+                        <td>
+                            <button class="letters" disabled="disabled">1/x</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="nums onHover">1</button>
+                        </td>
+                        <td>
+                            <button class="nums onHover">2</button>
+                        </td>
+                        <td>
+                            <button class="nums onHover">3</button>
+                        </td>
+                        <td>
+                            <button class="functions onHover signs">-</button>
+                        </td>
+                        <td rowspan="2">
+                            <button class="long functions onHover">=</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button class="big nums onHover">0</button>
+                        </td>
+                        <td>
+                            <button class="letters nums">.</button>
+                        </td>
+                        <td>
+                            <button class="functions onHover signs">+</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="scripts/calculator.js"></script>
+
+</body>
+
+</html>
