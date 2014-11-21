@@ -11,6 +11,7 @@ function Student(fname, lname, grade) {
 }
 
 Student.prototype = new Person();
+Student.prototype.constructor = Student;
 
 Student.prototype.sayHello = function() {
 	console.log(this.fname);
