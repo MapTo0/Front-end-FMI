@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:before,
+.clearfix:after { 
+	content: "\0020";
+	display: block;
+	height: 0;
+	overflow: hidden;
+} 
+
+.clearfix:after { 
+	clear: both;
+}
+
+.clearfix { 
+	zoom: 1;
+}
+
+body {
+	background-color: #ccc;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.gallery {
+	background-color: #8c8;
+	border: 1px solid #cfc;
+	border-radius: 40px;
+	box-shadow: 2px 2px 5px rgba(100, 100, 100, .5);
+	display: table;
+	margin: auto;
+	padding: 13.5px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	bottom: 20px;
+	left: 20px;
+	width: 1214px;
+}
+
+.gallery-item {
+	border: inherit;
+	cursor: pointer;
+	display: table-cell;
+	float: left;
+	margin: 10px;
+	overflow: hidden;
+	vertical-align: middle;
+	position: relative;
+	width: 375px;
+	height: 375px;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: 100%;
+	transition: transform 267ms ease-in-out;
+}
+
+.gallery-description {
+	background-color: rgba(120, 240, 120, .4);
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transform: rotate(180deg);
+	transform-origin: top center;
+	transition: transform .4s ease-out;
+}
+
+.gallery-description h2 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+/* Hover State */
+.gallery-item:hover img {
+	transform: scale(1.2);
+}
+
+.gallery-item:hover .gallery-description {
+	transform: rotate(0);
+}
