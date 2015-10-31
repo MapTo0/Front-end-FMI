@@ -1,5 +1,5 @@
-function forEach(action, arr) {
-	if (!action.call || !action.apply || !action.constructor) {
+function all(predicate, arr) {
+	if (!predicate.call || !predicate.apply || !predicate.constructor) {
 		throw 'first argument should be a function';
 	}
 
@@ -8,6 +8,10 @@ function forEach(action, arr) {
 	}
 
 	for (var i = 0; i < arr.length; i++) {
-		action(arr[i]);
+		if (!predicate(arr[i])) {
+			return false;
+		}
 	}
+
+	return true;
 }
